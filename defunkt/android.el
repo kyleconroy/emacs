@@ -1,4 +1,6 @@
 ; android
+(add-to-list 'load-path "~/.emacs.d/vendor/android-mode.el")
+(require 'android-mode)
 (setq android-mode-sdk-dir "/usr/local/android")
 (add-hook 'gud-mode-hook
            (lambda ()
