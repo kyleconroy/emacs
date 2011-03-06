@@ -11,6 +11,10 @@
 (load "defunkt/coffee")
 (load "defunkt/markdown")
 (load "defunkt/css")
+(load "defunkt/org")
+(load "defunkt/java")
+(load "defunkt/android")
+(load "defunkt/php")
 
 ;; all modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -40,6 +44,12 @@
 ; jasper
 (setq auto-mode-alist (cons '("\\.jr" . emacs-lisp-mode) auto-mode-alist))
 
+; haskell
+;; (autoload 'haskell-mode "haskell" "~/Dropbox/elisp/haskell-mode/haskell-site-file")
+;; (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+
 ; mode-compile
 (autoload 'mode-compile "mode-compile"
    "Command to compile current buffer file based on the major mode" t)
@@ -52,6 +62,7 @@
 
 ; yaml
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
 (add-hook 'yaml-mode-hook
     '(lambda ()
        (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
@@ -67,6 +78,6 @@
 (add-to-list 'auto-mode-alist '("\\.mustache$" . tpl-mode))
 
 ;; textmate.el
-(vendor 'textmate)
-(textmate-mode)
-(setq textmate-find-files-command "git ls-tree --full-tree --name-only -r HEAD")
+;; (vendor 'textmate)
+;; (textmate-mode)
+;; (setq textmate-find-files-command "git ls-tree --full-tree --name-only -r HEAD")

@@ -1,4 +1,6 @@
 ;; css
+(add-to-list 'auto-mode-alist '("\\.less$" . css-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 (setq css-mode-indent-depth 2)
 (add-hook 'css-mode-hook '(lambda ()
                             (define-key css-mode-map "\C-s" 'css-new-section)

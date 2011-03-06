@@ -1,3 +1,5 @@
+;;Display column number
+(column-number-mode 1)
 (require 'color-theme)
 (setq color-theme-is-global t)
 

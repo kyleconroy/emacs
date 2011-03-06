@@ -28,3 +28,9 @@
 [submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
 	url = git://github.com/defunkt/markdown-mode.git
+[submodule "vendor/android-mode.el"]
+	path = vendor/android-mode.el
+	url = git://github.com/remvee/android-mode.git
+[submodule "vendor/php-mode.el"]
+	path = vendor/php-mode.el
+	url = git://github.com/ieure/php-mode-el.git
