@@ -5,3 +5,7 @@
 (setq org-log-done 1)
 (setq org-startup-indented 1)
 (global-font-lock-mode 1)
+
+;; Enable time tracking
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
