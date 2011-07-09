@@ -34,3 +34,6 @@
 [submodule "vendor/php-mode.el"]
 	path = vendor/php-mode.el
 	url = git://github.com/ieure/php-mode-el.git
+[submodule "vendor/solarized-emacs"]
+	path = vendor/solarized-emacs
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
