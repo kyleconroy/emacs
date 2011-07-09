@@ -7,6 +7,9 @@
 (setq auto-mode-alist (cons '("\\.ronn?" . markdown-mode) auto-mode-alist))
 
 
+;; Turn on flyspell
+(setq flyspell-issue-message-flag nil)
+
 ;; Not ready.
 (defun defunkt-markdown-insert-link ()
   "Inserts an awesome link: [Word][ref] with [ref]: url at the

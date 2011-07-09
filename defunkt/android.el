@@ -5,4 +5,5 @@
 (add-hook 'gud-mode-hook
            (lambda ()
              (add-to-list 'gud-jdb-classpath "/usr/local/android/platforms/android-9/android.jar")
+             (add-to-list 'gud-jdb-classpath "/usr/local/android/platforms/android-10/android.jar")
              ))

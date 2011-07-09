@@ -46,6 +46,10 @@
 ;; Set file encoding
 (prefer-coding-system 'utf-8)
 
+;; Spelling
+(setq ispell-program-name "aspell")
+(add-to-list 'exec-path "/usr/local/bin")
+
 ;; Use Command as the meta key
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
